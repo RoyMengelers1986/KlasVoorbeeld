@@ -12,11 +12,14 @@ kat.Naam = "Mies";
 
 Console.WriteLine($"{kat.MaakGeluid()}");
 
-List<Dier> dieren = new List<Dier>();
-dieren.Add(hond);
-dieren.Add(kat);
+Baas baas = new Baas();
+baas.Naam = "Chris";
+baas.Dieren.Add(kat);
+baas.Dieren.Add(hond);
+baas.Dieren.Add(kat);
+baas.Dieren.Add(hond);
 
-foreach (Dier dier in dieren)
+foreach (Dier dier in baas.Dieren)
 {
     if (dier.GetType() == typeof(Hond))
     {
