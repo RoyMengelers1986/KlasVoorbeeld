@@ -4,15 +4,15 @@ public class Dier
 
     public int AantalPoten { get; set; }
 
-    private string _geluid;
+    public string Geluid { get; private set; }
 
     public Dier(string geluid)
     {
-        _geluid = geluid;
+        Geluid = geluid;
     }
 
-    public string MaakGeluid()
+    public virtual string MaakGeluid()
     {
-        return _geluid;
+        return Geluid;
     }
 }
