@@ -1,3 +1,5 @@
+namespace DefaultNamespace;
+
 public class Baas
 {
     public string Naam { get; set; }
